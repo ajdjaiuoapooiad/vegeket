@@ -83,3 +83,5 @@ class Profile(models.Model):
 def create_onetoone(sender, **kwargs):
     if kwargs['created']:
         Profile.objects.create(user=kwargs['instance'])
+        
+        
