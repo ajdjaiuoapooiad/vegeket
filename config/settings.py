@@ -126,15 +126,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATICFILES_DIRS=[
-    BASE_DIR / 'static'
-]
-
-
-TAX_RATE=0.1
+STATIC_URL = '/static/'
+ 
+STATICFILES_DIRS = [BASE_DIR / 'static']  # 追記
+ 
+# 消費税率
+TAX_RATE = 0.1
+ 
+# Stripe API Key
+STRIPE_API_SECRET_KEY = env.str('STRIPE_API_SECRET_KEY')
+ 
+# スキーマ＆ドメイン
+MY_URL = env.str('MY_URL')
