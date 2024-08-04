@@ -45,6 +45,16 @@
       {% endif %}
     </div>
   </div>
+ 
+  <h2>おすすめ</h2>
+  <div class="row mb-5">
+    {% for object in ADDTIONAL_ITEMS %}
+    <div class="col-12 col-lg-3 my-3">
+      {% include 'snippets/item_add_box.html' %}
+    </div>
+    {% endfor %}
+  </div>
+ 
 </div>
  
 {% endblock %}
