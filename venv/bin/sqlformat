@@ -1,4 +1,4 @@
-#!/Users/user/Desktop/vegeket/venv/bin/python3.11
+#!/Users/user/Desktop/vegiket-deploy/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
